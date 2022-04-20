@@ -8,6 +8,7 @@ public class ArrayStorage {
     static int x = 0;
 
     void clear() {
+        x=0;
         Arrays.fill(storage, null);
     }
 
@@ -34,6 +35,7 @@ public class ArrayStorage {
     }
 
     void delete(String uuid) {
+        x--;
         Resume[] resumes = null;
         for (int i = 0; i < storage.length; i++) {
             if (storage[i].toString().equals(uuid)) {
